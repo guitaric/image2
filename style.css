@@ -1,0 +1,144 @@
+/* @font-face {
+    src: url(fonts/Roboto-Regular.ttf);
+    src: url(fonts/Roboto-Bold.ttf); 
+} */
+
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --color-egg: #fff1df;
+    --color-white: white;
+    --color-bg: rgb(38, 43, 70);
+}
+
+html {
+    background-color: var(--color-bg);
+}
+
+body {
+    background-color: var(--color-white);
+    font-family: sans-serif;
+    margin: 100px 250px;
+    padding: 60px 0;
+    border-radius: 20px;
+    /* height: 100vh; */
+    /* font-weight: bold; */
+}
+
+.cursor {
+    width: 8px;
+    height: 8px;
+    background-color: var(--color-bg);
+    border: 1px solid var(--color-bg);
+    position: absolute;
+    border-radius: 50%;
+    /* border: 10px; */
+    /* transition: cursor; */
+    transition-duration: 1000 ms;
+    transition-timing-function: ease-in-out;
+    z-index: 1;
+}
+
+/* :not(body):hover .cursor {
+    background-color: white;
+    border: 1px solid white;
+} */
+
+
+.box{
+    font-size: 16px;
+    margin: 0px 10px 20px 10px;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: white;
+    transition: background-color .6s ease-in-out;
+}
+
+.box:hover{
+    background-color: #c9d2d8;
+}
+
+.wrapper{
+    display: flex;
+    flex-wrap: no-wrap;
+    justify-content: space-between;
+    margin: 0px 50px;
+}
+
+h1, h2, p, a{
+    padding: 10px;
+}
+
+h1 {
+    text-decoration: underline;
+    margin: 0px;
+}
+
+p {
+    padding-bottom: 0;
+    line-height: 1.5;
+    font-size: 14px;
+    margin: 0;
+}
+span {
+    font-weight: bold;
+}
+.colleft {
+    position: relative;
+    flex: 5
+}
+
+.colright {
+    flex: 7;
+}
+
+#statscontent {
+    display: flex;
+}
+
+h1 {
+    font-size: 30px;
+}
+h2 {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    text-decoration: underline;
+}
+
+ul {
+    font-size: 14px;
+    list-style: none;
+    padding-left: 10px;
+}
+
+li {
+    font-size: 14px;
+    line-height: 1.5;
+
+    /* padding-bottom: 5px; */
+}
+.statsleft {
+    padding-left: 10px;
+}
+.statsright {
+    padding-left: 40px;
+}
+
+h2 {
+    font-size: 16px;
+}
+
+img {
+   position: sticky;
+   left: 20%;
+   top: 0%;
+   clip-path: rect(2px, 5px, 100px, 5px);
+   border-radius: 15%;
+   width: 250px;
+   padding: 20px;
+   margin: 0 auto;
+}
